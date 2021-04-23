@@ -28,7 +28,6 @@ public class PriorityQueue<E extends Comparable<E>> implements PriorityQueueInte
   public void add(E newEntry) throws PriorityQueueException {
     // post: Adds a new entry to the priority queue according to
     // the priority value.
-    // ADD YOUR CODE HERE
     items[size] = newEntry;
     heapRebuild(0);
     size++;
@@ -48,7 +47,6 @@ public class PriorityQueue<E extends Comparable<E>> implements PriorityQueueInte
 
   private void heapRebuild(int root) {
     // Rebuild heap to keep it ordered
-    // ADD YOUR CODE HERE
     int left = 2 * (root + 1) - 1;
     int right = 2 * (root + 1);
     int smallerSubHeap;
